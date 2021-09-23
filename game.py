@@ -1,5 +1,11 @@
 # game.py
 
+
+
+import random
+
+
+
 #print("Rock, Paper, Scissors, Shoot!")
 
 #First Prompt User to input "Rock, Paper, or Scissors"
@@ -24,7 +30,7 @@ user_chose = input("Please Input either Rock, Paper, or Scissors:")
 
 #use an if statment here
 
-print(user_chose)
+print("You chose: " +user_chose)
 
 #print("You Chose: " +x)
 
@@ -32,19 +38,27 @@ print(user_chose)
 
 #checks to see if user entered valid input
 
-if input == "Rock" and "rock" : #changed or to and to see if that works
 
-    print("You chose: " +user_chose)
+options = ["rock", "paper", "scissors"]
 
-elif input == "Paper" or "paper" :
+computer_choice = random.choice(options) 
 
-    print("You chose: " +user_chose) #this might be the problem..
+print("The computer chose: " +computer_choice)
 
-elif input == "Scissors" or "scissors" :
 
-    print("You chose: " +user_chose)
 
-else :
-    print("You have entered an Inaccurate Input!")
+#if input == "Rock" and "rock" : #changed or to and to see if that works
 
-#my program is not picking up on the the inaccurate spelling or words inputed by user..
+    #print("You chose: " +user_chose)
+
+#elif input == "Paper" or "paper" :
+
+    #print("You chose: " +user_chose) #this might be the problem..
+
+#elif input == "Scissors" or "scissors" :
+
+    #print("You chose: " +user_chose)
+
+#else :
+    #print("You have entered an Inaccurate Input!")
+
