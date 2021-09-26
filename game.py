@@ -20,7 +20,7 @@ print("Welcome 'Player One' to my Rock, Paper, Scissors Game :)")
 
 #defined variable
 
-user_choice = input("Please Input either Rock, Paper, or Scissors:")
+user_choice = input("Please Input either Rock, Paper, or Scissors: ")
 
 #print("*************") #13 stars
 
@@ -41,7 +41,7 @@ computer_choice = random.choice(options)
 
 print("The computer chose: " +computer_choice)
 
-
+#Diego helped me understand how to set up the if-statements so that they made sense. The one I hd before was not fully working
 if user_choice == computer_choice : 
 
     print("It was a tie!")
@@ -66,9 +66,31 @@ elif computer_choice == "scissors" and user_choice == "paper" :
 elif computer_choice == "rock" and user_choice == "scissors" :
     print("The Computer Won!")
 
+#added for error input (did this part by myself)
+
+elif user_choice != "rock" and computer_choice == "paper" :
+
+    print("Error Incorrect input...Please try again")
+
+elif user_choice != "scissors" and computer_choice == "paper" :
+
+    print("Error Incorrect Input...Please try again")
+
+elif user_choice != "paper" and computer_choice == "rock" :
+    print("Error Incorrect Input...Please try again")
+
+elif user_choice != "rock" and computer_choice == "Scissors" :
+    print("Error Incorrect Input...Please try again")
+
+elif computer_choice != "scissors" and user_choice == "paper" :
+    print("Error Incorrect Input...Please try again")
+
+elif computer_choice != "rock" and user_choice == "scissors" :
+    print("Error Incorrect Input...Please try again")
+
+
 #breakpoint()
 
-if user_choice != "rock" or "paper" or "scissors" : #it works :))))
-    print("ERROR INCORRECT INPUT/OUTPUT")
+if user_choice == "rock" and "paper" and "scissors" :
+    print("Thanks, Please Play Again")
 
-print("Thanks, Please Play Again")
