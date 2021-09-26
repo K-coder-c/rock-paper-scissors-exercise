@@ -15,7 +15,13 @@ After activating the virtual environment, install package dependencies (see the 
 ```sh
 pip install -r requirements.txt
 ```
+install:
 
+os
+
+python-dotenv
+
+random
 
 To run the program: python game.py
 
