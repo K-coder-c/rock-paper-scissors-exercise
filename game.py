@@ -2,13 +2,25 @@
 
 import random
 
+
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+x = os.getenv("PLAYER_NAME")
+
+
+
+
 #print("Rock, Paper, Scissors, Shoot!")
 
 #First Prompt User to input "Rock, Paper, or Scissors"
 
 #print("*************") #13 stars
 
-print("Welcome 'Player One' to my Rock, Paper, Scissors Game :)")
+print("Welcome", x ,"to my Rock, Paper, Scissors Game :)")
 
 #print("*************") #13 stars
 
@@ -57,7 +69,7 @@ elif user_choice == "scissors" and computer_choice == "paper" :
 elif user_choice == "paper" and computer_choice == "rock" :
     print("You won")
 
-elif user_choice == "rock" and computer_choice == "Scissors" :
+elif user_choice == "rock" and computer_choice == "scissors" :
     print("You won!")
 
 elif computer_choice == "scissors" and user_choice == "paper" :
@@ -91,6 +103,7 @@ elif computer_choice != "rock" and user_choice == "scissors" :
 
 #breakpoint()
 
-if user_choice == "rock" and "paper" and "scissors" :
+if user_choice in options:
     print("Thanks, Please Play Again")
+
 
